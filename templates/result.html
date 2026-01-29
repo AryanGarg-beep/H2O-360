@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water Demand Forecast</title>
+
+    <!-- Flask-safe CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">H2O-360</div>
+</nav>
+
+<div class="container">
+
+    <h2>Water Demand Forecast</h2>
+    <p class="subtitle">Ward {{ ward }} · {{ ward_name }}</p>
+
+    <!-- ================= STATS ================= -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <span>Average Monthly Demand</span>
+            <h3>{{ avg_value }} ML</h3>
+        </div>
+
+        <div class="stat-card">
+            <span>Peak Month</span>
+            <h3>{{ peak_month }}</h3>
+        </div>
+
+        <div class="stat-card">
+            <span>Peak Demand</span>
+            <h3>{{ peak_value }} ML</h3>
+        </div>
+    </div>
+
+    <!-- ================= TABLE ================= -->
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Predicted Consumption (Million Litres)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in table %}
+            <tr>
+                <td>{{ row["Month Name"] }}</td>
+                <td>{{ row["Predicted Consumption"] | round(2) }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- ================= TOTAL ================= -->
+    <div class="total-card">
+        <span>Total Water Required</span>
+        <h3>{{ total_ml }} Million Litres</h3>
+    </div>
+
+    <!-- ================= CHART ================= -->
+    <div class="chart-container">
+        <canvas id="forecastChart"></canvas>
+    </div>
+
+</div>
+
+<!-- ================= FEATURE IMPORTANCE ================= -->
+<h3 style="margin-top:40px;">What drives water demand?</h3>
+<p class="subtitle">Relative importance of model features</p>
+
+<div class="chart-container">
+    <canvas id="importanceChart"></canvas>
+</div>
+
+
+<!-- ================= CHART.JS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const data = {{ table | tojson }};
+
+    const labels = data.map(row => row["Month Name"]);
+    const values = data.map(row => row["Predicted Consumption"]);
+
+    const ctx = document.getElementById("forecastChart").getContext("2d");
+
+    new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: labels,
+            datasets: [{
+                label: "Predicted Water Consumption (ML)",
+                data: values,
+                tension: 0.4,
+                fill: true,
+                borderWidth: 3,
+                borderColor: "#0284c7",
+                backgroundColor: "rgba(2, 132, 199, 0.2)",
+                pointRadius: 4,
+                pointBackgroundColor: "#0284c7"
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { display: true }
+            },
+            scales: {
+                y: {
+                    title: {
+                        display: true,
+                        text: "Million Litres (ML)"
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: "Month"
+                    }
+                }
+            }
+        }
+    });
+</script>
+
+<script>
+    const importanceData = {{ feature_importance | tojson }};
+
+    const impLabels = Object.keys(importanceData);
+    const impValues = Object.values(importanceData);
+
+    const ictx = document.getElementById("importanceChart").getContext("2d");
+
+    new Chart(ictx, {
+        type: "bar",
+        data: {
+            labels: impLabels,
+            datasets: [{
+                label: "Feature Importance",
+                data: impValues,
+                backgroundColor: [
+                    "#0284c7",
+                    "#38bdf8",
+                    "#7dd3fc",
+                    "#bae6fd",
+                    "#e0f2fe"
+                ],
+                borderRadius: 8
+            }]
+        },
+        options: {
+            indexAxis: "y",   // 👈 horizontal bars (VERY readable)
+            responsive: true,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: function(ctx) {
+                            return ctx.raw.toFixed(3);
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: "Relative Contribution"
+                    }
+                }
+            }
+        }
+    });
+</script>
+
+
+</body>
+</html>

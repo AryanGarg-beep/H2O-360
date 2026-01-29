@@ -1,0 +1,685 @@
+Station,District LGD Code,District,State LGD Code,State
+CHANWADA,461,Vadodara,24,Gujarat
+Chitrasani -Duplicate,459,Surat,24,Gujarat
+Derol Bridge,458,Sabarkantha,24,Gujarat
+GADAT,459,Surat,24,Gujarat
+Ganod,457,Rajkot,24,Gujarat
+Garudeshwar,452,Narmada,24,Gujarat
+Kamalpur ,455,Patan,24,Gujarat
+Khanpur,440,Anand,24,Gujarat
+Lowara,443,Bhavnagar,24,Gujarat
+MAHUWA,459,Surat,24,Gujarat
+MOTINAROLI,459,Surat,24,Gujarat
+Narmada at Garudeshwar,452,Narmada,24,Gujarat
+PINGALWADA,461,Vadodara,24,Gujarat
+Shetrunji at Lowara,443,Bhavnagar,24,Gujarat
+VAPI,462,Valsad,24,Gujarat
+Vautha,450,Kheda,24,Gujarat
+Abu Road,115,SIROHI,8,Rajasthan
+Abu Road -Duplicate,115,SIROHI,8,Rajasthan
+Aklera,105,JHALAWAR,8,Rajasthan
+Banas at Abu Road,115,SIROHI,8,Rajasthan
+Baranwada,113,SAWAI MADHOPUR,8,Rajasthan
+Barod,109,KOTA,8,Rajasthan
+Bigod,92,BHILWARA,8,Rajasthan
+Chittorgarh,95,CHITTORGARH,8,Rajasthan
+DHOLPUR,98,DHOLPUR,8,Rajasthan
+Khatoli,109,KOTA,8,Rajasthan
+Mandawara,109,KOTA,8,Rajasthan
+Manderial,108,KARAULI,8,Rajasthan
+Paderdibadi,99,DUNGARPUR,8,Rajasthan
+Pali,113,SAWAI MADHOPUR,8,Rajasthan
+Rangeli,99,DUNGARPUR,8,Rajasthan
+Sangod,109,KOTA,8,Rajasthan
+Tonk,116,TONK,8,Rajasthan
+Andhiyarkhore,650,BEMETARA,22,Chhattisgarh
+Bamnidhi,379,JANJGIR - CHAMPA,22,Chhattisgarh
+Baronda,645,GARIABAND,22,Chhattisgarh
+Basantpur,379,JANJGIR - CHAMPA,22,Chhattisgarh
+Belodi,378,DURG,22,Chhattisgarh
+Champa Road Bridge (CRB),379,JANJGIR - CHAMPA,22,Chhattisgarh
+Ghatora,375,BILASPUR,22,Chhattisgarh
+Ghatora - 1,375,BILASPUR,22,Chhattisgarh
+Ghatora - 2,375,BILASPUR,22,Chhattisgarh
+Gunderdehi,646,BALOD,22,Chhattisgarh
+Jagdalpur,374,BASTAR,22,Chhattisgarh
+Jondhra,375,BILASPUR,22,Chhattisgarh
+KALMA,379,JANJGIR - CHAMPA,22,Chhattisgarh
+Kanker,381,KANKER,22,Chhattisgarh
+Kelo at Raigarh,386,RAIGARH,22,Chhattisgarh
+Konta,642,SUKMA,22,Chhattisgarh
+Korba,383,KORBA,22,Chhattisgarh
+Korba - 1,383,KORBA,22,Chhattisgarh
+Kotni,378,DURG,22,Chhattisgarh
+Kurubhata,386,RAIGARH,22,Chhattisgarh
+Madhya Bharat Paper Ltd (MBPL),379,JANJGIR - CHAMPA,22,Chhattisgarh
+Manendragarh,384,KORIYA,22,Chhattisgarh
+Nawapara,387,RAIPUR,22,Chhattisgarh
+Pathagudem,636,BIJAPUR,22,Chhattisgarh
+Pathardihi,387,RAIPUR,22,Chhattisgarh
+Prakash Industries Ltd (PIL),379,JANJGIR - CHAMPA,22,Chhattisgarh
+RAJIM,645,GARIABAND,22,Chhattisgarh
+Rampur,644,BALODABAZAR,22,Chhattisgarh
+Sarangpal ,381,KANKER,22,Chhattisgarh
+Seorinarayan,379,JANJGIR - CHAMPA,22,Chhattisgarh
+Simga,644,BALODABAZAR,22,Chhattisgarh
+Annavasal,598,Karaikal,34,Puducherry
+Kumarapalayam,600,Puducherry,34,Puducherry
+Nallathur,598,Karaikal,34,Puducherry
+Bhalukpong,242,WEST KAMENG,12,Arunachal Pradesh
+Daporizo,241,UPPER SUBANSIRI,12,Arunachal Pradesh
+Doimukh,237,PAPUM PARE,12,Arunachal Pradesh
+Jollang ,237,PAPUM PARE,12,Arunachal Pradesh
+Kabu basti (Kambang),243,WEST SIANG,12,Arunachal Pradesh
+Lemeking,241,UPPER SUBANSIRI,12,Arunachal Pradesh
+Miao,229,CHANGLANG,12,Arunachal Pradesh
+Namsai,678,Namsai,12,Arunachal Pradesh
+Passighat,232,EAST SIANG,12,Arunachal Pradesh
+Seppa,231,EAST KAMENG,12,Arunachal Pradesh
+Tezu,234,LOHIT,12,Arunachal Pradesh
+Tuting,240,UPPER SIANG,12,Arunachal Pradesh
+Yazali,236,LOWER SUBANSIRI,12,Arunachal Pradesh
+Amarpur,654,Gomati,16,Tripura
+Belonia,271,SOUTH TRIPURA,16,Tripura
+GAJARIA,653,Sepahijala,16,Tripura
+HAORA,272,WEST TRIPURA,16,Tripura
+KAILASHAHAR GDSQ SITE,655,Unakoti,16,Tripura
+KAMALPUR,269,DHALAI,16,Tripura
+KHOWAI,652,Khowai,16,Tripura
+KUMARGHAT,655,Unakoti,16,Tripura
+Manughat,655,Unakoti,16,Tripura
+NUTANBAZAR GD SITE,270,NORTH TRIPURA,16,Tripura
+Sonamura,653,Sepahijala,16,Tripura
+Sairang,261,AIZAWL,15,Mizoram
+Tuirial,261,AIZAWL,15,Mizoram
+ADDOOR,534,Dakshin Kannada,29,Karnataka
+AKKIHEBBAL,544,Mandya,29,Karnataka
+AVERSHE,549,Udupi,29,Karnataka
+BANTWAL,534,Dakshin Kannada,29,Karnataka
+BENDRAHALLI,531,Chamarajanagar,29,Karnataka
+BYALADAHALLI,535,Davanagere,29,Karnataka
+Cholachagudda,524,Bagalkot,29,Karnataka
+CHUNCHUNAKATTE,545,Mysore,29,Karnataka
+Gokak falls,527,Belgaum,29,Karnataka
+HALADI,549,Udupi,29,Karnataka
+Haralahalli,540,Haveri,29,Karnataka
+HARIHARAPURA,532,Chikmagalur,29,Karnataka
+HOLEHONNUR,547,Shimoga,29,Karnataka
+Honnali,535,Davanagere,29,Karnataka
+HOOVINAHOLE,533,Chitradurga,29,Karnataka
+Huvinhedigi,546,Raichur,29,Karnataka
+KELLODU,533,Chitradurga,29,Karnataka
+K.M. VADI,545,Mysore,29,Karnataka
+KOKKEDODDY,631,Ramanagar,29,Karnataka
+KOLLEGAL,531,Chamarajanagar,29,Karnataka
+KUDIGE,541,Kodagu,29,Karnataka
+KUDLUR,531,Chamarajanagar,29,Karnataka
+KUPPELUR,540,Haveri,29,Karnataka
+LAKKAVALLI,532,Chikmagalur,29,Karnataka
+Malkhed,538,Kalaburagi,29,Karnataka
+Marol,540,Haveri,29,Karnataka
+M.H. HALLI,539,Hassan,29,Karnataka
+Mudhol,524,Bagalkot,29,Karnataka
+Nagalamedike,548,Tumkur,29,Karnataka
+Saigaon,529,Bidar,29,Karnataka
+SAKLESHPUR,539,Hassan,29,Karnataka
+SANTEGULI,550,Uttara Kannada,29,Karnataka
+Shimoga,547,Shimoga,29,Karnataka
+T. BEKKUPE,631,Ramanagar,29,Karnataka
+THIMMANAHALLI,539,Hassan,29,Karnataka
+T.K.HALLI,544,Mandya,29,Karnataka
+T. NARASIPUR,545,Mysore,29,Karnataka
+T. Ramapuram,528,Bellary,29,Karnataka
+Yadgir,635,Yadgir,29,Karnataka
+YENNEHOLE,549,Udupi,29,Karnataka
+Altuma,352,DHENKANAL,21,Odisha
+Anandpur,361,KENDUJHAR,21,Odisha
+Aradei,361,KENDUJHAR,21,Odisha
+Balighat,346,Baleshwar,21,Odisha
+Baripada,365,MAYURBHANJ,21,Odisha
+Bido,352,DHENKANAL,21,Odisha
+Bolani,373,SUNDARGARH,21,Odisha
+Bonaigarh,373,SUNDARGARH,21,Odisha
+Boudh,344,ANUGUL,21,Odisha
+Champua,361,KENDUJHAR,21,Odisha
+Gomlai,373,SUNDARGARH,21,Odisha
+Govindpur (NH5 Road Bridge),346,Baleshwar,21,Odisha
+Gudari,370,RAYAGADA,21,Odisha
+Gunupur,370,RAYAGADA,21,Odisha
+Indupur ,360,KENDRAPARA,21,Odisha
+Jamsholaghat,365,MAYURBHANJ,21,Odisha
+Jaraikela,373,SUNDARGARH,21,Odisha
+Jenapur,356,JAJAPUR,21,Odisha
+Kamalanga,352,DHENKANAL,21,Odisha
+Kantamal,349,BAUDH,21,Odisha
+Kashinagar,353,GAJAPATI,21,Odisha
+Kenduapada,361,KENDUJHAR,21,Odisha
+Keonjhar,361,KENDUJHAR,21,Odisha
+Kesinga,358,KALAHANDI,21,Odisha
+Khairmal,349,BAUDH,21,Odisha
+Kusei,361,KENDUJHAR,21,Odisha
+Madhabarida,353,GAJAPATI,21,Odisha
+Mahendragarh,353,GAJAPATI,21,Odisha
+Mushala,361,KENDUJHAR,21,Odisha
+Nandira,352,DHENKANAL,21,Odisha
+Nowrangpur,366,Nabarangapur,21,Odisha
+Padampur,347,BARGARH,21,Odisha
+Panposh,373,SUNDARGARH,21,Odisha
+Panposh-1,373,SUNDARGARH,21,Odisha
+Panposh-2,373,SUNDARGARH,21,Odisha
+Parmanpur,357,JHARSUGUDA,21,Odisha
+Purunagarh,351,DEBAGARH,21,Odisha
+Purusottampur,354,GANJAM,21,Odisha
+Rajghat,346,Baleshwar,21,Odisha
+R.S.P-1,373,SUNDARGARH,21,Odisha
+R.S.P-2,373,SUNDARGARH,21,Odisha
+R.S.P(RourkelaSteelPlant),373,SUNDARGARH,21,Odisha
+Salebhata,345,BALANGIR,21,Odisha
+Sorada,354,GANJAM,21,Odisha
+Sundergarh,373,SUNDARGARH,21,Odisha
+Sundergarh (Town),373,SUNDARGARH,21,Odisha
+Swampatna,361,KENDUJHAR,21,Odisha
+Talcher,344,ANUGUL,21,Odisha
+Tikarpara,344,ANUGUL,21,Odisha
+AMBARAMPALAYAM,569,Coimbatore,33,Tamil Nadu
+Ambasamudram,588,Theni,33,Tamil Nadu
+A.P.PURAM,592,Tirunelveli,33,Tamil Nadu
+Arcot,731,Ranipet,33,Tamil Nadu
+ASHRAMAM,575,Kanyakumari,33,Tamil Nadu
+Avarankuppam,732,Tirupathur,33,Tamil Nadu
+BILIGUNDULU,571,Dharmapuri,33,Tamil Nadu
+Chengalpet,730,Chengalpattu,33,Tamil Nadu
+ELUNUTHIMANGALAM,573,Erode,33,Tamil Nadu
+Gandhavayal,569,Coimbatore,33,Tamil Nadu
+Gopurajapuram,579,Nagapattinam,33,Tamil Nadu
+GUMMANUR,577,Krishnagiri,33,Tamil Nadu
+HOGENAKKAL,571,Dharmapuri,33,Tamil Nadu
+IRRUKKANKUDI,597,Virudhunagar,33,Tamil Nadu
+KODUMUDI,573,Erode,33,Tamil Nadu
+Kudalaiyathur,570,Cuddalore,33,Tamil Nadu
+KUZHITHURAI,575,Kanyakumari,33,Tamil Nadu
+Magaral,574,Kancheepuram,33,Tamil Nadu
+Menangudi,590,Tiruvarur,33,Tamil Nadu
+MURAPPANADU,594,Tuticorin,33,Tamil Nadu
+MUSIRI,591,Tiruchirappalli,33,Tamil Nadu
+NALLAMARANPATTY,576,Karur,33,Tamil Nadu
+NELLITHURAI,569,Coimbatore,33,Tamil Nadu
+PARAMAKUDI,583,Ramanathapuram,33,Tamil Nadu
+Peralam,590,Tiruvarur,33,Tamil Nadu
+Porakudi,579,Nagapattinam,33,Tamil Nadu
+SAVANDAPUR,573,Erode,33,Tamil Nadu
+SEVANUR,584,Salem,33,Tamil Nadu
+SINGASADANAPALLI,577,Krishnagiri,33,Tamil Nadu
+Thengudi,590,Tiruvarur,33,Tamil Nadu
+THENGUMARAHADA,587,Nilgiris,33,Tamil Nadu
+THENI,588,Theni,33,Tamil Nadu
+THEVUR,584,Salem,33,Tamil Nadu
+THOPPUR,584,Salem,33,Tamil Nadu
+URACHIKOTTAI,573,Erode,33,Tamil Nadu
+Vaigai Reservoir,588,Theni,33,Tamil Nadu
+Vazhavachanur,593,Tiruvannamalai,33,Tamil Nadu
+Villupuram,596,Viluppuram,33,Tamil Nadu
+Azmabad,192,BHAGALPUR,10,Bihar
+Bachhwara,191,BEGUSARAI,10,Bihar
+Bairgania,221,SITAMARHI,10,Bihar
+Baltara,202,KHAGARIA,10,Bihar
+Banjari,215,ROHTAS,10,Bihar
+Banka,190,BANKA,10,Bihar
+Buxar,194,BUXAR,10,Bihar
+Dheng Bridge,221,SITAMARHI,10,Bihar
+Dobhi,196,GAYA,10,Bihar
+Ekmighat,195,DARBHANGA,10,Bihar
+Gandhighat,212,PATNA,10,Bihar
+Gaya,196,GAYA,10,Bihar
+Hathidah,212,PATNA,10,Bihar
+Hayaghat,195,DARBHANGA,10,Bihar
+Jainagar,206,MADHUBANI,10,Bihar
+Jhanjharpur,206,MADHUBANI,10,Bihar
+Kakarghatti,195,DARBHANGA,10,Bihar
+Kanti,208,MUZAFFARPUR,10,Bihar
+Koelwar,212,PATNA,10,Bihar
+LABHA,201,KATIHAR,10,Bihar
+Lakhisarai,204,LAKHISARAI,10,Bihar
+Lakhoura,213,PURBA CHAMPARAN,10,Bihar
+Lalganj,224,VAISHALI,10,Bihar
+Manjhi,218,SARAN,10,Bihar
+Nirmali,223,SUPAUL,10,Bihar
+NTROAD XING (RANGANADI),213,MOTIHARI,10,Bihar
+Sakra,208,MUZAFFARPUR,10,Bihar
+Sikandarpur (Muzzafarpur),208,MUZAFFARPUR,10,Bihar
+Sripalpur,212,PATNA,10,Bihar
+Triveni,211,PASHCHIM CHAMPARAN,10,Bihar
+AKHNOOR,5,JAMMU,1,Jammu And Kashmir
+Dhamkund,621,RAMBAN,1,Jammu And Kashmir
+Jammu Tawi (Sidhra),5,JAMMU,1,Jammu And Kashmir
+Premnagar,4,DODA,1,Jammu And Kashmir
+Rammunshibagh (near Srinagar),13,SRINAGAR,1,Jammu And Kashmir
+Safapora,623,Bandipora,1,Jammu And Kashmir
+Sangam,1,ANANTNAG,1,Jammu And Kashmir
+Dadahu/Renuka,24,SIRMAUR,2,Himachal Pradesh
+Ganguwala,24,SIRMAUR,2,Himachal Pradesh
+Paonta,24,SIRMAUR,2,Himachal Pradesh
+TANDI,21,LAHUL and SPITI,2,Himachal Pradesh
+UDAIPUR,21,LAHUL and SPITI,2,Himachal Pradesh
+Yashwant Nagar,24,SIRMAUR,2,Himachal Pradesh
+A.B.Road X-ing,406,GUNA,23,Madhya Pradesh
+Bakhari,428,SEONI,23,Madhya Pradesh
+Bamni,415,MANDLA,23,Madhya Pradesh
+Barginagar,411,JABALPUR,23,Madhya Pradesh
+Barmanghat,418,NARSIMHAPUR,23,Madhya Pradesh
+Belkhedi,418,NARSIMHAPUR,23,Madhya Pradesh
+BURHANPUR,422,RAJGARH,23,Madhya Pradesh
+Chhidgaon,408,HARDA,23,Madhya Pradesh
+Dhulsar,403,DHAR,23,Madhya Pradesh
+DHULSAR,403,DHAR,23,Madhya Pradesh
+Dindori,404,DINDORI,23,Madhya Pradesh
+D/S Dindori (Jogitikariya),404,DINDORI,23,Madhya Pradesh
+D/S HIRAN ,411,JABALPUR,23,Madhya Pradesh
+D/S HOSHANGABAD,427,SEHORE,23,Madhya Pradesh
+D/S JABALPUR(tilwaraghat),411,JABALPUR,23,Madhya Pradesh
+D/S POINT OF SHER,418,NARSIMHAPUR,23,Madhya Pradesh
+Gadarwara,418,NARSIMHAPUR,23,Madhya Pradesh
+GARRAULI,434,TIKAMGARH,23,Madhya Pradesh
+Gaur at Bhalawara,411,JABALPUR,23,Madhya Pradesh
+Gorakhpur,404,DINDORI,23,Madhya Pradesh
+Goverdhey ghat,408,HARDA,23,Madhya Pradesh
+Handia,408,HARDA,23,Madhya Pradesh
+Jhokho,433,SIDHI,23,Madhya Pradesh
+Keolari,428,SEONI,23,Madhya Pradesh
+kogaon,414,Khargone,23,Madhya Pradesh
+Kokiwada,399,CHHINDWARA,23,Madhya Pradesh
+Kuldah Bridge,433,SIDHI,23,Madhya Pradesh
+Kumhari,392,BALAGHAT,23,Madhya Pradesh
+Lodhikheda,399,CHHINDWARA,23,Madhya Pradesh
+MADLA,420,PANNA,23,Madhya Pradesh
+Magardharra,392,BALAGHAT,23,Madhya Pradesh
+Mahidpur,435,UJJAIN,23,Madhya Pradesh
+Malpur,404,DINDORI,23,Madhya Pradesh
+Mandla,415,MANDLA,23,Madhya Pradesh
+Mandleshwar,414,Khargone,23,Madhya Pradesh
+Manot,415,MANDLA,23,Madhya Pradesh
+Mataji,423,RATLAM,23,Madhya Pradesh
+Mohgaon,415,MANDLA,23,Madhya Pradesh
+Mortakka,405,Khandwa,23,Madhya Pradesh
+MORTAKKA,405,Khandwa,23,Madhya Pradesh
+Narmadapuram,409,HOSHANGABAD,23,Madhya Pradesh
+OLD_PACHAULI,432,SHIVPURI,23,Madhya Pradesh
+PACHAWALI,432,SHIVPURI,23,Madhya Pradesh
+Patan,411,JABALPUR,23,Madhya Pradesh
+Pati,393,BARWANI,23,Madhya Pradesh
+Rajegaon,392,BALAGHAT,23,Madhya Pradesh
+Ramakona,436,UMARIA,23,Madhya Pradesh
+ Sandia,409,HOSHANGABAD,23,Madhya Pradesh
+Sarangpur,422,RAJGARH,23,Madhya Pradesh
+Satna (Panna-Khajuraho Bridge),426,SATNA,23,Madhya Pradesh
+SEONDHA,401,DATIA,23,Madhya Pradesh
+Tal,423,RATLAM,23,Madhya Pradesh
+Tapi at Burhanpur,397,BURHANPUR,23,Madhya Pradesh
+Ujjain,435,UJJAIN,23,Madhya Pradesh
+U/S Dindori,404,DINDORI,23,Madhya Pradesh
+U/S HOSHANGABAD,409,HOSHANGABAD,23,Madhya Pradesh
+U/S Jabalpur,411,JABALPUR,23,Madhya Pradesh
+U/S Mandla Rangrejghat,415,MANDLA,23,Madhya Pradesh
+U/S MANDLESHWR,414,Khargone,23,Madhya Pradesh
+Karnal,67,KARNAL,6,Haryana
+Mohna,60,FARIDABAD,6,Haryana
+AIE NH XING,281,BONGAIGAON,18,Assam
+Amraghat,282,CACHAR,18,Assam
+ANIPUR,293,KARIMGANJ,18,Assam
+Annapurna Ghat,282,CACHAR,18,Assam
+Badarpur Ghat,293,KARIMGANJ,18,Assam
+Badatighat,295,LAKHIMPUR,18,Assam
+BAHALPUR,285,DHUBRI,18,Assam
+Bakalighat,292,KARBI ANGLONG,18,Assam
+Baladoba,285,DHUBRI,18,Assam
+Banglabasti,297,NAGAON,18,Assam
+Beki Road bridge,280,BARPETA,18,Assam
+B G Road,300,SIVSAGAR,18,Assam
+Bhomoraguri,301,SONITPUR,18,Assam
+Bihubar,300,SIVSAGAR,18,Assam
+Biswanath Ghat,705,Biswanath,18,Assam
+Bokajan,292,KARBI ANGLONG,18,Assam
+Chaklagaon,281,BONGAIGAON,18,Assam
+Changsari,291,KAMRUP,18,Assam
+Chenimari (Khowang),286,DIBRUGARH,18,Assam
+Chouldhowaghat,295,LAKHIMPUR,18,Assam
+Desangpani,708,Charaideo,18,Assam
+Dharamtul,296,MARIGAON,18,Assam
+Dholabazar,302,TINSUKIA,18,Assam
+Dholai,282,CACHAR,18,Assam
+Dhubri,285,DHUBRI,18,Assam
+Dibrugarh,286,DIBRUGARH,18,Assam
+Dillighat,286,DIBRUGARH,18,Assam
+Diprang Gaon,296,MARIGAON,18,Assam
+DRF,616,Baksa,18,Assam
+DUDHNAI,287,GOALPARA,18,Assam
+Fakirabazar,293,KARIMGANJ,18,Assam
+Fulertal,282,CACHAR,18,Assam
+Gahampai,299,Dima Hasao,18,Assam
+Garampani,292,KARBI ANGLONG,18,Assam
+Gelabil,288,GOLAGHAT,18,Assam
+Gharmura,289,HAILAKANDI,18,Assam
+Goalpara,287,GOALPARA,18,Assam
+Golaghat,288,GOLAGHAT,18,Assam
+Golokganj,285,DHUBRI,18,Assam
+Gumrabazar,282,CACHAR,18,Assam
+Guwahati(D.C.Court),291,KAMRUP,18,Assam
+Harangajao,299,Dima Hasao,18,Assam
+Jagibhakatgaon,296,MARIGAON,18,Assam
+Kakripara,707,South Salmara-Mankachar,18,Assam
+Kaliajari,296,MARIGAON,18,Assam
+Kamarpur,296,MARIGAON,18,Assam
+Kampur,297,NAGAON,18,Assam
+Karimganj,293,KARIMGANJ,18,Assam
+Kheronighat,292,KARBI ANGLONG,18,Assam
+Khudrakhowa,280,BARPETA,18,Assam
+Kokrajhar,294,KOKRAJHAR,18,Assam
+Krishnai,287,GOALPARA,18,Assam
+KULSI,291,KAMRUP,18,Assam
+Kusumbil,294,KOKRAJHAR,18,Assam
+Langrimukh,299,Dima Hasao,18,Assam
+Machaigaon,300,SIVSAGAR,18,Assam
+Magurgaon,297,NAGAON,18,Assam
+Malibari,291,KAMRUP,18,Assam
+Manas N H Crossing,281,BONGAIGAON,18,Assam
+Margherita,302,TINSUKIA,18,Assam
+Mathanguri,616,Baksa,18,Assam
+Matijuri,289,HAILAKANDI,18,Assam
+Matunga,616,Baksa,18,Assam
+Mojowari,299,Dima Hasao,18,Assam
+Monierkhal,282,CACHAR,18,Assam
+Naharkatia,286,DIBRUGARH,18,Assam
+Nanglamoraghat,300,SIVSAGAR,18,Assam
+Neamatighat,290,JORHAT,18,Assam
+Nona,298,NALBARI,18,Assam
+NT Road Crossing Jia-Bharali,301,SONITPUR,18,Assam
+Numaligarh,288,GOLAGHAT,18,Assam
+Pagladiya N T Road Crossing,298,NALBARI,18,Assam
+PANBARI,612,Chirang,18,Assam
+PANCHARATNA,287,GOALPARA,18,Assam
+Pandu,291,KAMRUP,18,Assam
+Patacharkuchi,280,BARPETA,18,Assam
+Pohumara,280,BARPETA,18,Assam
+Polaguri,296,MARIGAON,18,Assam
+Puthimari NH Rd Xing,291,KAMRUP,18,Assam
+Ramdia,291,KAMRUP,18,Assam
+Ranganadi NT Road crossing,295,LAKHIMPUR,18,Assam
+Ririgaon,288,GOLAGHAT,18,Assam
+Satpokholi,291,KAMRUP,18,Assam
+Sholmari,298,NALBARI,18,Assam
+Silghat,297,NAGAON,18,Assam
+Simultala,296,MARIGAON,18,Assam
+Sivasagar,300,SIVSAGAR,18,Assam
+SONAPUR,291,KAMRUP,18,Assam
+South Salmara,707,South Salmara-Mankachar,18,Assam
+Suklai,616,Baksa,18,Assam
+Tarabari,280,BARPETA,18,Assam
+Teok,290,JORHAT,18,Assam
+Tezpur,301,SONITPUR,18,Assam
+TULARGRAM,282,CACHAR,18,Assam
+Udaipur,302,TINSUKIA,18,Assam
+ARANGALI,566,THRISSUR,32,Kerala
+AYILAM ,565,THIRUVANANTHAPURAM,32,Kerala
+ERINJIPUZHA,558,KASARAGOD,32,Kerala
+KALAMPUR,555,ERNAKULAM,32,Kerala
+KALLOOPPARA,564,PATHANAMTHITTA,32,Kerala
+KARATHODU,562,MALAPPURAM,32,Kerala
+KIDANGOOR,560,KOTTAYAM,32,Kerala
+KUMBIDI,563,PALAKKAD,32,Kerala
+KUNIYIL,562,MALAPPURAM,32,Kerala
+KUTTYADI,561,KOZHIKODE,32,Kerala
+MALAKKARA,564,PATHANAMTHITTA,32,Kerala
+MANKARA,563,PALAKKAD,32,Kerala
+MUTHANKERA,567,WAYANAD,32,Kerala
+NEELEESWARAM,555,ERNAKULAM,32,Kerala
+PATTAZHY,559,Kollam,32,Kerala
+PERUMANNU,557,KANNUR,32,Kerala
+PUDUR,563,PALAKKAD,32,Kerala
+PULAMANTHOLE,563,PALAKKAD,32,Kerala
+RAMAMANGALAM,555,ERNAKULAM,32,Kerala
+THUMPAMON,564,PATHANAMTHITTA,32,Kerala
+VANDIPERIYAR,556,IDUKKI,32,Kerala
+Chotabekra,255,IMPHAL EAST,14,Manipur
+Ambgaon (Bagdi),471,Bhandara,27,Maharashtra
+Arjunwad (Seasonal),480,Kolhapur,27,Maharashtra
+Ashti,475,Gadchiroli,27,Maharashtra
+Ashti APM,473,Chandrapur,27,Maharashtra
+Badlapur,497,Thane,27,Maharashtra
+Bamni (Ballarsha),473,Chandrapur,27,Maharashtra
+Bamni (BPM),473,Chandrapur,27,Maharashtra
+Bamni U/S,473,Chandrapur,27,Maharashtra
+Belne Bridge,495,Sindudurg,27,Maharashtra
+Betmogra,485,Nanded,27,Maharashtra
+Degloor,485,Nanded,27,Maharashtra
+Dhalegaon,489,Parbhani,27,Maharashtra
+Dhond,490,Pune,27,Maharashtra
+DURVESH,497,Thane,27,Maharashtra
+GOPALKHEDA,467,Akola,27,Maharashtra
+G.R.BRIDGE,489,Parbhani,27,Maharashtra
+Hivra,498,Wardha,27,Maharashtra
+Karad,494,Satara,27,Maharashtra
+Kopergaon,9999,Ahmadnagar,27,Maharashtra
+KURUNDWAD,480,Kolhapur,27,Maharashtra
+Mahalgaon,476,Gondia,27,Maharashtra
+Mangaon,491,Raigad,27,Maharashtra
+Mirawadi,490,Pune,27,Maharashtra
+Mungoli (Township),500,Yavatmal,27,Maharashtra
+Muradpur,492,Ratnagiri,27,Maharashtra
+Nagothane,491,Raigad,27,Maharashtra
+Nanded,485,Nanded,27,Maharashtra
+Nandgaon,498,Wardha,27,Maharashtra
+Pachegaon,9999,Ahmadnagar,27,Maharashtra
+Paragaon,490,Pune,27,Maharashtra
+Patala,473,Chandrapur,27,Maharashtra
+Patansaongi,484,Nagpur,27,Maharashtra
+Pauni,471,Bhandara,27,Maharashtra
+Pen,491,Raigad,27,Maharashtra
+P.G. Bridge,500,Yavatmal,27,Maharashtra
+Phulgaon,490,Pune,27,Maharashtra
+Purna,489,Parbhani,27,Maharashtra
+Purna at Gopalkheda,467,Akola,27,Maharashtra
+ Purna at Yerli,472,Buldana,27,Maharashtra
+Sakhra (Wadsa),475,Gadchiroli,27,Maharashtra
+Sakmur,473,Chandrapur,27,Maharashtra
+Samdoli (Seasonal),493,Sangli,27,Maharashtra
+SARANGKHEDA,486,Nandurbar,27,Maharashtra
+Sarati,490,Pune,27,Maharashtra
+Satrapur,484,Nagpur,27,Maharashtra
+Takli,496,Solapur,27,Maharashtra
+Tekra,475,Gadchiroli,27,Maharashtra
+Terwad (Seasonal),480,Kolhapur,27,Maharashtra
+Wadakbal,496,Solapur,27,Maharashtra
+Wairagarh,475,Gadchiroli,27,Maharashtra
+Warunji,494,Satara,27,Maharashtra
+Yelli,485,Nanded,27,Maharashtra
+YERLI,472,Buldana,27,Maharashtra
+Zari,489,Parbhani,27,Maharashtra
+Byrnihat,276,RI BHOI,17,Meghalaya
+Dawki,275,West Jaintia Hills,17,Meghalaya
+Dimapara,277,South Garo Hills,17,Meghalaya
+Kharkhana,275,West Jaintia Hills,17,Meghalaya
+Shella,274,East Khasi Hills,17,Meghalaya
+Sibbari,277,South Garo Hills,17,Meghalaya
+Therriaghat,274,East Khasi Hills,17,Meghalaya
+Umkhen-II,274,East Khasi Hills,17,Meghalaya
+Umsiang,276,RI BHOI,17,Meghalaya
+Delhi Railway Bridge,80,NORTH,7,Delhi
+Palla,82,NORTH WEST,7,Delhi
+Alipurduar,664,ALIPURDUAR,19,West Bengal
+Ambari,308,COOCH BEHAR,19,West Bengal
+Babughat,314,JALPAIGURI,19,West Bengal
+BANPUR,320,NADIA,19,West Bengal
+Barabisha,664,ALIPURDUAR,19,West Bengal
+BERHAMPORE,319,MURSHIDABAD,19,West Bengal
+Champasari,309,DARJILING,19,West Bengal
+CHAPRA,320,NADIA,19,West Bengal
+CHEL,314,JALPAIGURI,19,West Bengal
+Chepan,664,ALIPURDUAR,19,West Bengal
+CORONATION,309,DARJILING,19,West Bengal
+CS 97 A GANGA FARAKKA,319,MURSHIDABAD,19,West Bengal
+DIANA,314,JALPAIGURI,19,West Bengal
+DOMOHANI,314,JALPAIGURI,19,West Bengal
+ENGLISHBAZAR,316,MALDAH,19,West Bengal
+FARAKKA(HR),319,MURSHIDABAD,19,West Bengal
+Gazoldoba,314,JALPAIGURI,19,West Bengal
+GHISH,314,JALPAIGURI,19,West Bengal
+Ghugumari,308,COOCH BEHAR,19,West Bengal
+Gopiballavpur,317,MEDINIPUR,19,West Bengal
+HANSKHALI,320,NADIA,19,West Bengal
+Hasimara,664,ALIPURDUAR,19,West Bengal
+Jaigaon,664,ALIPURDUAR,19,West Bengal
+Jaldhaka NH-31,314,JALPAIGURI,19,West Bengal
+KALNA (Ebb),306,PURBA BARDHAMAN,19,West Bengal
+KALNA (flow),306,PURBA BARDHAMAN,19,West Bengal
+KATWA,306,PURBA BARDHAMAN,19,West Bengal
+Mathabhanga,308,COOCH BEHAR,19,West Bengal
+Matigara,309,DARJILING,19,West Bengal
+Mekhliganj (R/B),308,COOCH BEHAR,19,West Bengal
+MURTI,314,JALPAIGURI,19,West Bengal
+Nagrakata,314,JALPAIGURI,19,West Bengal
+NEORA,314,JALPAIGURI,19,West Bengal
+Noukaghat,314,JALPAIGURI,19,West Bengal
+NUTANHAT,306,PURBA BARDHAMAN,19,West Bengal
+Sankosh LRP,664,ALIPURDUAR,19,West Bengal
+SEVOKE,309,DARJILING,19,West Bengal
+Shaladang,308,COOCH BEHAR,19,West Bengal
+Singimari,308,COOCH BEHAR,19,West Bengal
+Sonapur,311,NORTH DINAJPUR,19,West Bengal
+Suldaguri,308,COOCH BEHAR,19,West Bengal
+TEESTA BAZAR,309,DARJILING,19,West Bengal
+Tilpara  Mihirlal Barrage,307,BIRBHUM,19,West Bengal
+Tufanganj,308,COOCH BEHAR,19,West Bengal
+Adityapur,343,PASHCHIMI SINGHBHUM,20,Jharkhand
+BaridihNalla,327,EAST  SINGHBHUM (Jamshedpur),20,Jharkhand
+Domuhani,327,EAST  SINGHBHUM (Jamshedpur),20,Jharkhand
+Garhwa,338,PALAMAU,20,Jharkhand
+GhatshilaRoadBridge,327,PURBI SINGHBHUM,20,Jharkhand
+Ghatsila,327,PURBI SINGHBHUM,20,Jharkhand
+Hendegir,332,HAZARIBAG,20,Jharkhand
+Jamshedpur,327,PURBI SINGHBHUM,20,Jharkhand
+Jamtara,333,JAMTARA,20,Jharkhand
+Japla,338,PALAMAU,20,Jharkhand
+Kulpatanga,341,Saraikela,20,Jharkhand
+Lupungdih,327,EAST  SINGHBHUM (Jamshedpur),20,Jharkhand
+Maharo,326,DUMKA,20,Jharkhand
+Mohammad Ganj,338,PALAMAU,20,Jharkhand
+Muri,339,RANCHI,20,Jharkhand
+Ramgarh,607,RAMGARH,20,Jharkhand
+Tilga,342,SIMDEGA,20,Jharkhand
+Alladupalli,504,CUDDAPAH,28,Andhra Pradesh
+Anakapalli,520,VISAKHAPATNAM,28,Andhra Pradesh
+Bawapuram,511,KURNOOL,28,Andhra Pradesh
+Chennur,504,CUDDAPAH,28,Andhra Pradesh
+Kamalapuram,504,CUDDAPAH,28,Andhra Pradesh
+Keesara,510,KRISHNA,28,Andhra Pradesh
+Mantralayam,511,KURNOOL,28,Andhra Pradesh
+Melliaputti,519,SRIKAKULAM,28,Andhra Pradesh
+Naidupet,515,NELLORE,28,Andhra Pradesh
+Nandipalli,504,CUDDAPAH,28,Andhra Pradesh
+Nellore CWC,515,NELLORE,28,Andhra Pradesh
+Paleru Bridge,510,KRISHNA,28,Andhra Pradesh
+Polavaram site,748,ELURU,28,Andhra Pradesh
+Singavaram,502,ANANTAPUR,28,Andhra Pradesh
+Srikakulam,519,SRIKAKULAM,28,Andhra Pradesh
+Sullurpet,515,NELLORE,28,Andhra Pradesh
+Tadipatri,502,ANANTAPUR,28,Andhra Pradesh
+Vijayawada,510,KRISHNA,28,Andhra Pradesh
+AGRA (J.B.),118,AGRA,9,Uttar Pradesh
+AGRA(POIYAGHAT),118,AGRA,9,Uttar Pradesh
+Akbarpur,121,AMBEDKAR NAGAR,9,Uttar Pradesh
+Allahabad,120,PRAYGRAJ,9,Uttar Pradesh
+Ankinghat,157,KANPUR NAGAR,9,Uttar Pradesh
+AURAIYA,122,AURAIYA,9,Uttar Pradesh
+Ayodhya ,140,Ayodhya,9,Uttar Pradesh
+Baghpat,124,BAGHPAT,9,Uttar Pradesh
+Baleni,124,BAGHPAT,9,Uttar Pradesh
+Balrampur,127,BALRAMPUR,9,Uttar Pradesh
+Baluaghat ,187,VARANASI,9,Uttar Pradesh
+BANDA,128,BANDA,9,Uttar Pradesh
+Bansi ,182,SIDDHARTHNAGAR,9,Uttar Pradesh
+Bareilly,130,BAREILLY,9,Uttar Pradesh
+Basantpur_CWC,132,BIJNOR,9,Uttar Pradesh
+Basti,131,BASTI,9,Uttar Pradesh
+Basti D/S,131,BASTI,9,Uttar Pradesh
+Basti U/S,131,BASTI,9,Uttar Pradesh
+Bewar,166,MAINPURI,9,Uttar Pradesh
+Bhinga,181,SHRAWASTI,9,Uttar Pradesh
+Bhitaura,142,FATEHPUR,9,Uttar Pradesh
+Birdghat ,148,GORAKHPUR,9,Uttar Pradesh
+Bithoor,157,KANPUR NAGAR,9,Uttar Pradesh
+B.K.Ghat,125,BAHRAICH,9,Uttar Pradesh
+Chandradeepghat,147,GONDA,9,Uttar Pradesh
+Chandrika Devi,162,LUCKNOW,9,Uttar Pradesh
+Chopan,184,SONBHADRA,9,Uttar Pradesh
+Dabri,180,Shahjhanpur,9,Uttar Pradesh
+Dhaneta,130,BAREILLY,9,Uttar Pradesh
+Duddhi,184,SONBHADRA,9,Uttar Pradesh
+Elginbridge,129,BARABANKI,9,Uttar Pradesh
+ETAWAH,139,ETAWAH,9,Uttar Pradesh
+Faizabad U/S,140,Ayodhya,9,Uttar Pradesh
+Fatehgarh,141,FARRUKHABAD,9,Uttar Pradesh
+Gagan Moradabad,171,MORADABAD,9,Uttar Pradesh
+Galeta,124,BAGHPAT,9,Uttar Pradesh
+Garhmukteshwar,661,Hapur,9,Uttar Pradesh
+Ghazipur (Veer Abdul Hamid Bridge),146,GHAZIPUR,9,Uttar Pradesh
+Gomti Nagar,162,LUCKNOW,9,Uttar Pradesh
+Gorakhpur D/S,148,GORAKHPUR,9,Uttar Pradesh
+Gorakhpur U/S,148,GORAKHPUR,9,Uttar Pradesh
+HAMIRPUR,149,HAMIRPUR,9,Uttar Pradesh
+Hathi Khana,141,FARRUKHABAD,9,Uttar Pradesh
+Jajmau,157,KANPUR NAGAR,9,Uttar Pradesh
+Jaunpur,152,JAUNPUR,9,Uttar Pradesh
+Jaunpur (MG Marg Bridge),152,JAUNPUR,9,Uttar Pradesh
+Jhansi Mirjapur Road Bridge,149,HAMIRPUR,9,Uttar Pradesh
+Kabir Ganj,173,PILIBHIT,9,Uttar Pradesh
+Kachhlabridge,133,BUDAUN,9,Uttar Pradesh
+"Kailas Mandir, Agra",118,AGRA,9,Uttar Pradesh
+Kalanaur,177,SAHARANPUR,9,Uttar Pradesh
+Kannauj ( Kali),155,KANNAUJ,9,Uttar Pradesh
+Kanpur,157,KANPUR NAGAR,9,Uttar Pradesh
+Kasganj,633,KASGANJ,9,Uttar Pradesh
+Katri Umrauli,155,KANNAUJ,9,Uttar Pradesh
+Kazipura,171,MORADABAD,9,Uttar Pradesh
+KORA-OLD,142,FATEHPUR,9,Uttar Pradesh
+LUCKNOW,162,LUCKNOW,9,Uttar Pradesh
+Lucknow (Hanuman Setu),162,LUCKNOW,9,Uttar Pradesh
+MAIGHAT,152,JAUNPUR,9,Uttar Pradesh
+Mathura (Gokul Barrage),167,MATHURA,9,Uttar Pradesh
+Mathura (Prayag ghat),167,MATHURA,9,Uttar Pradesh
+Mawi ,660,SHAMLI,9,Uttar Pradesh
+Mehandipur,155,KANNAUJ,9,Uttar Pradesh
+Mejaroad,120,PRAYGRAJ,9,Uttar Pradesh
+Mirzapur,170,MIRZAPUR,9,Uttar Pradesh
+MOHANA,151,JALAUN,9,Uttar Pradesh
+Moradabad,171,MORADABAD,9,Uttar Pradesh
+NARHAN,135,CHANDAULI,9,Uttar Pradesh
+Neemsar,183,SITAPUR,9,Uttar Pradesh
+Noida,144,G.B. Nagar,9,Uttar Pradesh
+Orai Rath Marg,151,JALAUN,9,Uttar Pradesh
+Paliakalan,159,KHERI,9,Uttar Pradesh
+Parmarth Ghat,157,KANPUR NAGAR,9,Uttar Pradesh
+Parsohan Ghat,182,SIDDHARTHNAGAR,9,Uttar Pradesh
+Pratapgarh,174,PRATAPGARH,9,Uttar Pradesh
+PRATAPPUR,120,PRAYGRAJ,9,Uttar Pradesh
+Rae bareli,175,Raibareli,9,Uttar Pradesh
+RAJAPUR,136,CHITRAKOOT,9,Uttar Pradesh
+RAJGHAT,161,LALITPUR,9,Uttar Pradesh
+Rampur_GSM,176,RAMPUR,9,Uttar Pradesh
+Regauli,148,GORAKHPUR,9,Uttar Pradesh
+SAHIJINA,149,HAMIRPUR,9,Uttar Pradesh
+Saidpur,146,GHAZIPUR,9,Uttar Pradesh
+Seohara,132,BIJNOR,9,Uttar Pradesh
+Shahjahanpur,180,Shahjhanpur,9,Uttar Pradesh
+Shahzadpur,158,KAUSHAMBI,9,Uttar Pradesh
+Shastri Bridge,120,PRAYGRAJ,9,Uttar Pradesh
+Sitapur,183,SITAPUR,9,Uttar Pradesh
+Sultanpur,185,SULTANPUR,9,Uttar Pradesh
+Tanda D/S,121,AMBEDKAR NAGAR,9,Uttar Pradesh
+Tanda U/S,121,AMBEDKAR NAGAR,9,Uttar Pradesh
+Tiharkheda,130,BAREILLY,9,Uttar Pradesh
+Todarpur,150,HARDOI,9,Uttar Pradesh
+Turtipar,126,BALLIA,9,Uttar Pradesh
+UDI,139,ETAWAH,9,Uttar Pradesh
+Varanasi,187,VARANASI,9,Uttar Pradesh
+V S Bridge,187,VARANASI,9,Uttar Pradesh
+Yamuna Highway Road Bridge,118,AGRA,9,Uttar Pradesh

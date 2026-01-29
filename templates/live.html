@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Water Flow Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard {
+    background: white;
+    padding: 36px;
+    border-radius: 20px;
+    width: 420px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+    border: 2px solid #90e0ef;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 6px;
+    color: #0f172a;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 30px;
+}
+
+/* metrics */
+.metric {
+    margin-bottom: 24px;
+}
+
+.metric .value {
+    font-size: 40px;
+    font-weight: 700;
+    color: #0284c7;
+}
+
+.metric .label {
+    font-size: 13px;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* leak card */
+.leak-card {
+    margin-top: 30px;
+    padding: 22px;
+    border-radius: 16px;
+    background: #f1f5f9;
+    transition: all 0.3s ease;
+}
+
+.leak-ok {
+    background: #ecfeff;
+    color: #065f46;
+}
+
+.leak-warning {
+    background: #fff7ed;
+    color: #9a3412;
+}
+
+.leak-danger {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.leak-status {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.leak-desc {
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.timer {
+    margin-top: 10px;
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+.timestamp {
+    margin-top: 18px;
+    font-size: 12px;
+    color: #64748b;
+}
+</style>
+</head>
+
+<body>
+
+<div class="dashboard">
+    <h2>Live Water Monitor</h2>
+    <div class="subtitle">Leakage detection & usage analytics</div>
+
+    <div class="metric">
+        <div id="flow" class="value">--</div>
+        <div class="label">Flow rate (L/min)</div>
+    </div>
+
+    <div class="metric">
+        <div id="total" class="value">--</div>
+        <div class="label">Total usage (L)</div>
+    </div>
+
+    <div style="margin-top: 30px;">
+    <canvas id="flowChart" height="160"></canvas>
+</div>
+
+
+    <div id="leakCard" class="leak-card leak-ok">
+        <div id="leakStatus" class="leak-status">No Leak Detected</div>
+        <div id="leakDesc" class="leak-desc">
+            System operating normally
+        </div>
+        <div id="leakTimer" class="timer"></div>
+    </div>
+
+    <div class="timestamp">
+        Last update: <span id="time">--</span>
+    </div>
+</div>
+
+<script>
+let leakSeconds = 0;
+
+/* ---------- CHART SETUP ---------- */
+const MAX_POINTS = 60; // 3 minutes @ 1s interval
+const labels = [];
+const flowData = [];
+
+const ctx = document.getElementById("flowChart").getContext("2d");
+
+const flowChart = new Chart(ctx, {
+    type: "line",
+    data: {
+        labels: labels,
+        datasets: [{
+            label: "Flow (L/min)",
+            data: flowData,
+            borderColor: "#0284c7",
+            backgroundColor: "rgba(2, 132, 199, 0.15)",
+            tension: 0.35,
+            fill: true,
+            pointRadius: 0
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { display: false }
+        },
+        scales: {
+            x: {
+                display: false   // time not needed visually
+            },
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: "L/min"
+                },
+                grid: {
+                    color: "#e5e7eb"
+                }
+            }
+        }
+    }
+});
+
+const LEAK_MIN = 0.5;   // L/min
+const LEAK_MAX = 2.5;    // L/min
+const LEAK_TIME = 20;    // seconds
+const NO_FLOW_THRESHOLD = 0.01; // L/min (basically zero)
+
+
+setInterval(() => {
+    let isLeak = false;
+    fetch("/api/flow/live")
+        .then(r => r.json())
+        .then(data => {
+            const flow = data.flow_lpm || 0;
+            // ---- update chart ----
+const now = new Date().toLocaleTimeString();
+
+labels.push(now);
+flowData.push(flow);
+
+if (labels.length > MAX_POINTS) {
+    labels.shift();
+    flowData.shift();
+}
+
+
+
+flowChart.update();
+
+            const total = data.total_liters || 0;
+
+            document.getElementById("flow").innerText = flow.toFixed(2);
+            document.getElementById("total").innerText = total.toFixed(3);
+            document.getElementById("time").innerText =
+                data.timestamp ?? "--";
+
+            const card = document.getElementById("leakCard");
+            const status = document.getElementById("leakStatus");
+            const desc = document.getElementById("leakDesc");
+            const timer = document.getElementById("leakTimer");
+
+
+if (flow >= LEAK_MIN && flow <= LEAK_MAX) {
+    leakSeconds++;
+
+    if (leakSeconds >= LEAK_TIME) {
+        isLeak = true;
+
+        card.className = "leak-card leak-danger";
+        status.innerText = "⚠ Leak Detected";
+        desc.innerText = "Continuous low flow suggests leakage";
+    } else {
+        card.className = "leak-card leak-warning";
+        status.innerText = "Possible Leak";
+        desc.innerText = "Low continuous flow detected";
+    }
+
+    timer.innerText = `Duration: ${leakSeconds}s`;
+} else {
+    leakSeconds = 0;
+    card.className = "leak-card leak-ok";
+    status.innerText = "No Leak Detected";
+    desc.innerText = "System operating normally";
+    timer.innerText = "";
+}
+        })
+        .catch(console.error);
+}, 1000);
+</script>
+
+</body>
+</html>

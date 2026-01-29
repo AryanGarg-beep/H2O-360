@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WQI Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container-wqi">
+
+    <h1>Water Quality Index</h1>
+    <p class="subtitle">
+        Predicted using historical chemical and seasonal data
+    </p>
+
+    <!-- ================= WQI SCORE ================= -->
+    <div class="wqi-card {{ category }}">
+        <div class="wqi-value">{{ wqi }}</div>
+        <div class="wqi-label">WQI Score</div>
+    </div>
+
+    <!-- ================= CATEGORY ================= -->
+    <div class="category-text">
+        {% if wqi <= 25 %}
+            🟢 <strong>Excellent</strong> — Safe for drinking & ecosystems
+        {% elif wqi <= 50 %}
+            🟡 <strong>Good</strong> — Acceptable with minimal treatment
+        {% elif wqi <= 75 %}
+            🟠 <strong>Poor</strong> — Treatment recommended
+        {% else %}
+            🔴 <strong>Unfit</strong> — Not suitable for consumption
+        {% endif %}
+    </div>
+
+    <a class="btn" href="/wqi">Predict another sample</a>
+
+    <!-- ================= FEATURE IMPORTANCE ================= -->
+    <h3 class="section-title">Feature Importance</h3>
+    <p class="subtitle">
+        Relative contribution of each parameter in the model
+    </p>
+
+    <div class="chart-box">
+        <canvas id="importanceChart"></canvas>
+    </div>
+
+</div>
+
+<!-- ================= CHART ================= -->
+<script>
+    const labels = {{ importance | map(attribute='feature') | list | tojson }};
+    const values = {{ importance | map(attribute='importance') | list | tojson }};
+
+    new Chart(document.getElementById("importanceChart"), {
+        type: "bar",
+        data: {
+            labels: labels,
+            datasets: [{
+                label: "Importance (%)",
+                data: values,
+                backgroundColor: "#0284c7",
+                borderRadius: 6
+            }]
+        },
+        options: {
+            responsive: true,
+            indexAxis: "y",   // 👈 horizontal = readable
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: ctx => ctx.raw + " %"
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: "Relative Importance (%)"
+                    }
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

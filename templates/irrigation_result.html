@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Irrigation Assessment Result</title>
+
+    <link rel="stylesheet" href="../static/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">H20-360</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Irrigation</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Irrigation Assessment</h1>
+            <div class="hero-content">
+                <h2>Prediction Results</h2>
+                <p>Village-level irrigation and groundwater assessment.</p>
+            </div>
+        </section>
+
+        <!-- Location context -->
+        <section class="context-card">
+            <h3>Location</h3>
+            <p>
+                <strong>District:</strong>
+                {{ district | default("Not specified") }}
+            </p>
+        </section>
+
+        <!-- Irrigation prediction -->
+        <section class="result-card">
+            <h3>Predicted Net Irrigated Area</h3>
+            <p class="result-value">
+                {{ predicted_irrigation }} units
+            </p>
+            <small class="hint">
+                Estimated irrigated land area based on irrigation and land-use inputs.
+            </small>
+        </section>
+
+        <!-- Groundwater stress -->
+        <section class="result-card">
+            <h3>Groundwater Stress</h3>
+            <p class="result-value">
+                {{ groundwater_stress }}
+            </p>
+            <small class="hint">
+                Positive values indicate groundwater depletion, negative values indicate recharge.
+            </small>
+        </section>
+
+        <section class="result-card">
+    <h3>Feature Influence Overview</h3>
+    <canvas id="featureChart" height="140"></canvas>
+    <small class="hint">
+        Relative influence of input parameters on irrigation prediction.
+    </small>
+</section>
+
+
+        <div class="actions">
+            <a href="/" class="button secondary">Run Another Assessment</a>
+        </div>
+    </main>
+
+    <script>
+const importanceData = {{ feature_importance | tojson }};
+
+const labels = Object.keys(importanceData);
+const values = Object.values(importanceData);
+
+new Chart(document.getElementById("featureChart"), {
+    type: "bar",
+    data: {
+        labels: labels,
+        datasets: [{
+            label: "Relative Feature Importance",
+            data: values,
+            backgroundColor: "#48cae4",
+            borderRadius: 8
+        }]
+    },
+    options: {
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+                callbacks: {
+                    label: ctx => "Importance: " + ctx.raw.toFixed(3)
+                }
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+                max: 0.2,
+                title: {
+                    display: true,
+                    text: "Relative Importance"
+                }
+            },
+            x: {
+                grid: { display: false }
+            }
+        }
+    }
+});
+</script>
+
+</body>
+</html>

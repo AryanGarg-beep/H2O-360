@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Groundwater Prediction Result</title>
+
+    <style>
+        /* ===== PAGE BACKGROUND ===== */
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(180deg, #f8fafc, #eef2ff);
+            padding: 60px 20px;
+        }
+
+        /* ===== RESULT CARD ===== */
+        .gw-result-container {
+            max-width: 560px;
+            margin: auto;
+            background: white;
+            padding: 46px 50px;
+            border-radius: 22px;
+            text-align: center;
+            box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+        }
+
+        /* ===== HEADING ===== */
+        .gw-result-container h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 24px;
+        }
+
+        /* ===== VALUE ===== */
+        .gw-value {
+            font-size: 56px;
+            font-weight: 800;
+            color: #0284c7;
+            margin-bottom: 10px;
+        }
+
+        .gw-unit {
+            font-size: 16px;
+            font-weight: 600;
+            color: #64748b;
+            margin-bottom: 26px;
+        }
+
+        /* ===== STATUS BADGE ===== */
+        .gw-status {
+            display: inline-block;
+            padding: 12px 22px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 999px;
+            margin-bottom: 36px;
+        }
+
+        .safe {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .warning {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .danger {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        /* ===== LINK ===== */
+        .gw-back-link {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            color: #0369a1;
+            transition: color 0.2s ease;
+        }
+
+        .gw-back-link:hover {
+            color: #0284c7;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 480px) {
+            .gw-result-container {
+                padding: 36px 28px;
+            }
+
+            .gw-value {
+                font-size: 44px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gw-result-container">
+        <h2>Predicted Groundwater Level</h2>
+
+        <div class="gw-value">
+            {{ level }}
+        </div>
+        <div class="gw-unit">meters below ground level (mbgl)</div>
+
+        {% if "Critical" in status or "Very Deep" in status %}
+            <div class="gw-status danger">{{ status }}</div>
+        {% elif "Deep" in status or "Moderate" in status %}
+            <div class="gw-status warning">{{ status }}</div>
+        {% else %}
+            <div class="gw-status safe">{{ status }}</div>
+        {% endif %}
+
+        <br>
+
+        <a href="/groundwater" class="gw-back-link">
+            ← Predict another groundwater level
+        </a>
+    </div>
+
+</body>
+</html>

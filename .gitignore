@@ -1,0 +1,40 @@
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+venv/
+instance/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+*.ipynb
+
+# ===== OS =====
+.DS_Store
+
+# ===== Logs =====
+*.log
+
+# ===== ML Artifacts (optional) =====
+#*.pkl
+#*.joblib
+# *.json   # ← only ignore if models are regenerable
+
+# ===== Data (optional control) =====
+# data/*.csv
+# !data/station_lookup.csv
+
+# ===== Frontend / Build =====
+node_modules/
+dist/
+
+train_model.py
+
+main.py
+
+model_old.pkl
+model_last.pkl
+wqi_xgb_v0.json

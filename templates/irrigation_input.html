@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Irrigation & Groundwater | H2O-360°</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(180deg, #f8fafc, #eef2f7);
+            color: #0f172a;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 56px;
+            background: white;
+            box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 700;
+            color: #0284c7;
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: 60px auto 30px;
+            padding: 60px;
+            border-radius: 28px;
+            background: linear-gradient(135deg, #ecfeff, #f8fafc);
+            box-shadow: 0 30px 70px rgba(15, 23, 42, 0.12);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+        }
+
+        .hero-content h2 {
+            font-size: 26px;
+            color: #0891b2;
+            margin-top: 8px;
+        }
+
+        .hero-content p {
+            font-size: 16px;
+            color: #475569;
+            max-width: 620px;
+            margin: 10px auto 0;
+        }
+
+        .form {
+            max-width: 520px;
+            margin: 40px auto 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .form label {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .form input,
+        .form select {
+            padding: 14px;
+            border-radius: 14px;
+            border: 1px solid #cbd5f5;
+            font-size: 15px;
+        }
+
+        .form button {
+            margin-top: 24px;
+            padding: 15px;
+            border-radius: 18px;
+            border: none;
+            font-weight: 700;
+            font-size: 16px;
+            color: white;
+            background: linear-gradient(135deg, #22d3ee, #0891b2);
+            box-shadow: 0 14px 35px rgba(8,145,178,0.35);
+            cursor: pointer;
+        }
+
+        .form button.secondary {
+            background: #f1f5f9;
+            color: #0369a1;
+            box-shadow: none;
+        }
+
+        .actions {
+            display: flex;
+            gap: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">H2O-360°</div>
+</nav>
+
+<section class="hero">
+    <h1>Irrigation & Groundwater</h1>
+    <div class="hero-content">
+        <h2>Village-Level Assessment</h2>
+        <p>
+            Estimate irrigation coverage and groundwater stress
+            using agricultural indicators.
+        </p>
+    </div>
+</section>
+
+<form class="form" method="POST" action="/irrigation-predict">
+
+    <label>State</label>
+    <select name="state" required>
+        <option value="">Select State</option>
+        <option value="TN">Tamil Nadu</option>
+        <option value="UP">Uttar Pradesh</option>
+    </select>
+
+    <label>District</label>
+    <input type="text" name="district_name" list="district-list" required>
+
+    <datalist id="district-list">
+        {% for district in districts %}
+        <option value="{{ district }}"></option>
+        {% endfor %}
+    </datalist>
+
+    <label>Geographical Area</label>
+    <input type="number" name="geographical_area" required>
+
+    <label>Cultivable Area</label>
+    <input type="number" name="cultivable_area" required>
+
+    <label>Net Sown Area</label>
+    <input type="number" name="net_sown_area" required>
+
+    <label>Gross Irrigated Area (Kharif)</label>
+    <input type="number" name="gross_irrigated_area_kharif" required>
+
+    <label>Gross Irrigated Area (Rabi)</label>
+    <input type="number" name="gross_irrigated_area_rabi" required>
+
+    <label>Gross Irrigated Area (Perennial)</label>
+    <input type="number" name="gross_irrigated_area_perennial" required>
+
+    <label>Gross Irrigated Area (Other)</label>
+    <input type="number" name="gross_irrigated_area_other" required>
+
+    <label>Avg Groundwater Level (Pre-Monsoon)</label>
+    <input type="number" name="gw_pre_monsoon" required>
+
+    <label>Avg Groundwater Level (Post-Monsoon)</label>
+    <input type="number" name="gw_post_monsoon" required>
+
+    <div class="actions">
+        <button type="submit">Assess Irrigation</button>
+        <button type="reset" class="secondary">Clear</button>
+    </div>
+
+</form>
+
+</body>
+</html>

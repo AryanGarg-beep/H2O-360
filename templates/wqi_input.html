@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water Quality Index Prediction</title>
+
+    <!-- Main site CSS (navbar untouched) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <!-- Page-specific styling -->
+    <style>
+        /* ===== PAGE WRAPPER ===== */
+        .wqi-container {
+            max-width: 900px;
+            margin: 80px auto;
+            background: white;
+            padding: 48px 56px;
+            border-radius: 22px;
+            border: 2px solid #90e0ef;
+            box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+        }
+
+        /* ===== HEADINGS ===== */
+        .wqi-container h1 {
+            text-align: center;
+            font-size: 44px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+
+        .wqi-subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #475569;
+            max-width: 640px;
+            margin: 0 auto 48px;
+        }
+
+        /* ===== FORM GRID ===== */
+        .wqi-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px 28px;
+        }
+
+        /* ===== LABELS ===== */
+        .wqi-form label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #334155;
+        }
+
+        /* ===== INPUTS ===== */
+        .wqi-form input,
+        .wqi-form select {
+            width: 100%;
+            padding: 14px 16px;
+            font-size: 16px;
+            border-radius: 14px;
+            border: 1.5px solid #e2e8f0;
+            outline: none;
+            background: #ffffff;
+            transition: all 0.25s ease;
+        }
+
+        .wqi-form input::placeholder {
+            color: #94a3b8;
+        }
+
+        .wqi-form input:focus,
+        .wqi-form select:focus {
+            border-color: #0284c7;
+            box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.15);
+        }
+
+        /* ===== FULL WIDTH ROWS ===== */
+        .wqi-form button {
+            grid-column: span 2;
+        }
+
+        /* ===== SUBMIT BUTTON ===== */
+        .wqi-form button {
+            margin-top: 30px;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            border: none;
+            border-radius: 999px;
+            cursor: pointer;
+            background: linear-gradient(135deg, #48cae4, #0077b6);
+            box-shadow: 0 12px 30px rgba(2, 132, 199, 0.35);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .wqi-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 45px rgba(2, 132, 199, 0.45);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .wqi-container {
+                padding: 36px 28px;
+                margin: 40px 16px;
+            }
+
+            .wqi-form {
+                grid-template-columns: 1fr;
+            }
+
+            .wqi-form button {
+                grid-column: span 1;
+            }
+
+            .wqi-container h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR (UNTOUCHED) -->
+    <nav class="navbar">
+        <div class="logo">H2O-360°</div>
+        <ul class="nav-links">
+            <li><a href="/live" target="_blank">Live</a></li>
+            <li><a href="/wqi" target="_blank">WQI Predictor</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== CONTENT ===== -->
+    <div class="wqi-container">
+        <h1>Water Quality Index Predictor</h1>
+        <p class="wqi-subtitle">
+            Enter water quality parameters to estimate the Water Quality Index (WQI).
+        </p>
+
+        <form class="wqi-form" action="/wqi-predict" method="POST">
+
+           <label>Station</label>
+<select id="stationSelect" name="station_id" required>
+    <option value="">Select a station</option>
+</select>
+
+
+
+            <label>Month</label>
+            <select name="month" required>
+                {% for i in range(1, 13) %}
+                <option value="{{ i }}">{{ i }}</option>
+                {% endfor %}
+            </select>
+
+            <label>pH</label>
+            <input type="number" step="0.01" name="ph" required>
+
+            <label>Dissolved Oxygen (mg/L)</label>
+            <input type="number" step="0.01" name="do" required>
+
+            <label>Total Dissolved Solids (mg/L)</label>
+            <input type="number" step="0.01" name="tds" required>
+
+            <label>Nitrate-N (mgN/L)</label>
+            <input type="number" step="0.01" name="nitrate" required>
+
+            <label>Chloride (mg/L)</label>
+            <input type="number" step="0.01" name="chloride" required>
+
+            <label>Sulphate (mg/L)</label>
+            <input type="number" step="0.01" name="sulphate" required>
+
+            <label>Total Hardness (mgCaCO3/L)</label>
+            <input type="number" step="0.01" name="hardness" required>
+
+            <label>Iron (mg/L)</label>
+            <input type="number" step="0.01" name="iron" required>
+
+            <label>Total Alkalinity (mg/L as CaCO3)</label>
+            <input type="number" step="0.01" name="alkalinity" required>
+
+            <label>Sodium (mg/L)</label>
+            <input type="number" step="0.01" name="sodium" required>
+
+            <label>Year</label>
+            <input type="number" name="year" value="2024" required>
+
+            
+            <button type="submit">Predict WQI</button>
+
+        </form>
+    </div>
+
+
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const select = document.getElementById("stationSelect");
+
+    fetch("/api/stations")
+        .then(res => res.json())
+        .then(stations => {
+            stations.forEach(s => {
+                const option = document.createElement("option");
+                option.value = s.station_id;
+                option.textContent =
+                    `${s.station_name} — ${s.district}, ${s.state}`;
+                select.appendChild(option);
+            });
+        })
+        .catch(err => {
+            console.error("Failed to load stations:", err);
+        });
+});
+</script>
+
+
+
+
+
+</body>
+</html>
