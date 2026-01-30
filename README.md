@@ -82,6 +82,25 @@ Most water management systems rely on:
 - Wi-Fi enabled microcontrollers (e.g. Pico W / ESP32)
 
 ---
+## 🧪 Local Setup
 
-## 📁 Project Structure
+```bash
+# Clone repo
+git clone <repo-url>
+cd h2o-360
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run locally
+python app.py
+Visit: http://127.0.0.1:5000
+
+#Deployment
+gunicorn app:app
+
 
